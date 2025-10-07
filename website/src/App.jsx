@@ -10,13 +10,15 @@ import './App.css'
 // import Cart from './pages/Cart'
 // import About from './pages/About' 
 import ToggleSwitch from './miniProject/toggleSwitch/ToggleSwitch'
+import Todo from './Project/Todo/Todo'
 
 
 function App() {
 
   return (
-    <div className='flex justify-center items-center h-screen bg-gray-100'>
-      <ToggleSwitch />
+    <div className='h-100vh'>
+      {/* <ToggleSwitch /> */}
+      <Todo />
     </div>
     // <div className="flex flex-col min-h-screen">
     //   <NavBar />
