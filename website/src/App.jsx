@@ -11,6 +11,10 @@ import './App.css'
 // import About from './pages/About' 
 import ToggleSwitch from './miniProject/toggleSwitch/ToggleSwitch'
 import Todo from './Project/Todo/Todo'
+import ShortCircuit from './components/ShortCircuit'
+import Registration from './components/Registration'
+import RegistrationReact from './components/RegistrationReact'
+import LoginForm from './components/LoginForm'
 
 
 function App() {
@@ -18,7 +22,11 @@ function App() {
   return (
     <div className='h-100vh'>
       {/* <ToggleSwitch /> */}
-      <Todo />
+      {/* <Todo /> */}
+      {/* <ShortCircuit /> */}
+      {/* <Registration /> */}
+      {/* <RegistrationReact /> */}
+      <LoginForm />
     </div>
     // <div className="flex flex-col min-h-screen">
     //   <NavBar />

@@ -26,6 +26,8 @@ function Todo() {
         })
         setInputValue("");
     }
+
+    localStorage.setItem("tasks", JSON.stringify(task));
     const handleDeleteTask = (index) => {
         const updatedTask = task.filter((curTask) => {
             return curTask !== task[index]
