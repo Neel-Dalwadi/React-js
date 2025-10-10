@@ -15,19 +15,20 @@ import ShortCircuit from './components/ShortCircuit'
 import Registration from './components/Registration'
 import RegistrationReact from './components/RegistrationReact'
 import LoginForm from './components/LoginForm'
+import HowNotToFetchAPI from './Project/Pokemon/HowNotToFetchAPI'
 
 
 function App() {
 
   return (
-    <div className='h-100vh'>
-      {/* <ToggleSwitch /> */}
-      {/* <Todo /> */}
-      {/* <ShortCircuit /> */}
-      {/* <Registration /> */}
-      {/* <RegistrationReact /> */}
-      <LoginForm />
-    </div>
+    // <div className='h-100vh'>
+    //   {/* <ToggleSwitch /> */}
+    //   {/* <Todo /> */}
+    //   {/* <ShortCircuit /> */}
+    //   {/* <Registration /> */}
+    //   {/* <RegistrationReact /> */}
+
+    // </div>
     // <div className="flex flex-col min-h-screen">
     //   <NavBar />
     //   <div className='flex-grow container mx-auto px-4 py-8'>
@@ -41,6 +42,10 @@ function App() {
     //   </div>
     //   <Footer />
     // </div>
+    <div className='h-100vh'>
+      <HowNotToFetchAPI />
+
+    </div>
   )
 }
 
