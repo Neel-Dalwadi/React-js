@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function Header() {
     return (
         <header className="w-full shadow-sm">
-            <div className="bg-gray-900 flex justify-between items-center px-8 py-4 text-gray-200 text-sm py-2 text-center">
+            <div className="bg-gray-900 flex justify-between items-center px-8  text-gray-200 text-sm py-2 text-center">
                 Get Dalwadi Membership. 30-day return or refund guarantee.
                 <div className="flex items-center space-x-4">
                     <NavLink
