@@ -4,23 +4,25 @@ import { postData } from "../api/PostApi";
 function Form({ data, setData, updateData, setUpdateData, onUpdatePost }) {
     const [addData, setAddData] = useState({
         title: "",
-        body: ""
+        body: "",
     });
 
     useEffect(() => {
         if (updateData) {
             setAddData({
                 title: updateData.title || "",
-                body: updateData.body || ""
+                body: updateData.body || "",
             });
+        } else {
+            setAddData({ title: "", body: "" });
         }
     }, [updateData]);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setAddData((prevData) => ({
-            ...prevData,
-            [name]: value
+        setAddData((prev) => ({
+            ...prev,
+            [name]: value,
         }));
     };
 
@@ -90,10 +92,11 @@ function Form({ data, setData, updateData, setUpdateData, onUpdatePost }) {
 
                 <button
                     type="submit"
-                    className={`${updateData
+                    className={`${
+                        updateData
                             ? "bg-yellow-500 hover:bg-yellow-600"
                             : "bg-indigo-600 hover:bg-indigo-700"
-                        } text-white font-semibold py-2 px-8 rounded-lg transition-all duration-300 shadow-md`}
+                    } text-white font-semibold py-2 px-8 rounded-lg transition-all duration-300 shadow-md`}
                 >
                     {updateData ? "Update Post" : "Add Post"}
                 </button>
